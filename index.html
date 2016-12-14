@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Universal by ufo-github</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/ufo-github/universal">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Universal</h1>
+            <h2>Universal (isomorphic) javascript support for Angular2</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/ufo-github/universal/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/ufo-github/universal/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p><a href="https://travis-ci.org/angular/universal"><img src="https://travis-ci.org/angular/universal.svg?branch=master" alt="Build Status"></a>
+<a href="http://badge.fury.io/js/angular2-universal"><img src="https://badge.fury.io/js/angular2-universal.svg" alt="npm version"></a>
+<a href="https://gitter.im/angular/universal?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/angular/universal"></a>
+<a href="http://issuestats.com/github/angular/universal"><img src="http://issuestats.com/github/angular/universal/badge/pr?style=flat" alt="Issue Stats"></a>
+<a href="http://issuestats.com/github/angular/universal"><img src="http://issuestats.com/github/angular/universal/badge/issue?style=flat" alt="Issue Stats"></a></p>
+
+<p align="center">
+  
+    <img src="https://cloud.githubusercontent.com/assets/1016365/10639063/138338bc-7806-11e5-8057-d34c75f3cafc.png" alt="Universal Angular 2" height="320">
+  
+</p>
+
+<h1>
+<a id="universal-angular-2" class="anchor" href="#universal-angular-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Universal Angular 2</h1>
+
+<blockquote>
+<p>Universal (isomorphic) JavaScript support for Angular 2.</p>
+</blockquote>
+
+<h1>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h1>
+
+<ul>
+<li><a href="#documentation">Documentation</a></li>
+<li>
+<a href="#getting-started">Getting Started with Universal</a>
+
+<ul>
+<li>w/ NodeJS Server</li>
+<li>w/ ASP.NET Core Server</li>
+</ul>
+</li>
+<li><a href="#universal-gotchas">Universal "Gotchas"</a></li>
+<li>
+<a href="#modules">Modules</a>
+
+<ul>
+<li><a href="#universal">Universal</a></li>
+</ul>
+</li>
+<li><a href="#whats-in-a-name">What's in a name?</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h1>
+
+<p><strong><a href="https://github.com/angular/universal/blob/master/DOCUMENTATION.md">Universal Documentation &amp; Guide</a></strong></p>
+
+<ul>
+<li>Featuring an overview, installation process, and key concepts for creating Universal Angular applications.</li>
+<li>For those intersted in how it all got started, and the goals of Universal check out the <a href="https://docs.google.com/document/d/1q6g9UlmEZDXgrkY88AJZ6MUrUxcnwhBGS0EXbVlYicY">Original Design Doc (from 2015)</a>
+</li>
+</ul>
+
+<h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<p><a href="https://github.com/angular/universal-starter">* <strong>NodeJS</strong> :: <strong>Universal Starter</strong> repo</a></p>
+
+<ul>
+<li>Minimal webpack angular2 &amp; universal starter</li>
+<li>
+<strong>Installation</strong>: Clone the above repo, <code>npm i &amp;&amp; npm start</code> to fire it up.</li>
+</ul>
+
+<p><a href="https://github.com/MarkPieszak/aspnetcore-angular2-universal">* ASP.NET Core :: Universal Starter repo</a></p>
+
+<ul>
+<li>
+<strong>Installation</strong>: Clone the above repo, <code>npm i &amp;&amp; dotnet restore</code> <em>(VStudio will run these automatically when opening the project)</em>
+</li>
+<li>Launch files included for both VSCode &amp; VStudio to run/debug automatically (press F5).</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="universal-gotchas" class="anchor" href="#universal-gotchas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Universal "Gotchas"</h1>
+
+<blockquote>
+<p>When building Universal components in Angular 2 there are a few things to keep in mind.</p>
+</blockquote>
+
+<ul>
+<li>To use <code>templateUrl</code> or <code>styleUrls</code> you must use <strong><code>angular2-template-loader</code></strong> in your TS loaders.
+
+<ul>
+<li>This is already setup within this starter repo. Look at the webpack.config file <a href="https://github.com/angular/universal-starter/blob/master/webpack.config.ts">here</a> for details &amp; implementation.</li>
+</ul>
+</li>
+<li>
+<strong><code>window</code></strong>, <strong><code>document</code></strong>, <strong><code>navigator</code></strong>, and other browser types - <em>do not exist on the server</em> - so using them, or any library that uses them (jQuery for example) will not work. You do have some options, if you truly need some of this functionality:
+
+<ul>
+<li>If you need to use them, consider limiting them to only your main.client and wrapping them situationally with the imported <em>isBrowser / isNode</em> features from Universal.  <code>import { isBrowser, isNode } from 'angular2-universal'</code>;</li>
+<li>Another option is using <code>DOM</code> from <a href="https://github.com/angular/angular/blob/e3687706c71beb7c9dbdae1bbb5fbbcea588c476/modules/%40angular/platform-browser/src/dom/dom_adapter.ts#L34">"@angular/platform-browser"</a>
+</li>
+</ul>
+</li>
+<li>Try to <em>limit or</em> <strong>avoid</strong> using <strong><code>setTimeout</code></strong>. It will slow down the server-side rendering process. Make sure to remove them <a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-class.html"><code>ondestroy</code></a> in Components.
+
+<ul>
+<li>Also for RxJs timeouts, make sure to <em>cancel</em> their stream on success, for they can slow down rendering as well.</li>
+</ul>
+</li>
+<li>
+<strong>Don't manipulate the nativeElement directly</strong>. Use the <em>Renderer</em>. We do this to ensure that in any environment we're able to change our view.</li>
+</ul>
+
+<pre><code>constructor(element: ElementRef, renderer: Renderer) {
+  renderer.setElementStyle(element.nativeElement, 'font-size', 'x-large');
+}
+</code></pre>
+
+<ul>
+<li>The application runs XHR requests on the server &amp; once again on the Client-side (when the application bootstraps)
+
+<ul>
+<li>Use a <a href="https://github.com/angular/universal-starter/blob/master/src/app/shared/api.service.ts#L46-L71">UniversalCache</a> instead of regular Http, to save certain requests so they aren't re-ran again on the Client.</li>
+</ul>
+</li>
+<li>Know the difference between attributes and properties in relation to the DOM.</li>
+<li>Keep your directives stateless as much as possible. For stateful directives, you may need to provide an attribute that reflects the corresponding property with an initial string value such as url in img tag. For our native <img src=""> element the src attribute is reflected as the src property of the element type HTMLImageElement.</li>
+</ul>
+
+<h1>
+<a id="modules" class="anchor" href="#modules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modules</h1>
+
+<h2>
+<a id="universal" class="anchor" href="#universal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="/modules/universal">Universal</a>
+</h2>
+
+<blockquote>
+<p>Manage your application lifecycle and serialize changes while on the server to be sent to the client.</p>
+</blockquote>
+
+<h3>
+<a id="videos" class="anchor" href="#videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Videos</h3>
+
+<p>Angular 2 Universal Patterns - ng-conf, May 2016<br>
+<a href="https://www.youtube.com/watch?v=TCj_oC3m6_U"><img src="http://img.youtube.com/vi/TCj_oC3m6_U/0.jpg" alt="Angular 2 Universal Patterns"></a></p>
+
+<p>Angular Universal Source Code - ReadTheSource, January 2016<br>
+<a href="https://www.youtube.com/watch?v=qOjtFjXoebY"><img src="http://img.youtube.com/vi/qOjtFjXoebY/0.jpg" alt="Angular Universal Source Code"></a></p>
+
+<p>Full Stack Angular 2 - AngularConnect, Oct 2015<br>
+<a href="https://www.youtube.com/watch?v=MtoHFDfi8FM"><img src="https://img.youtube.com/vi/MtoHFDfi8FM/0.jpg" alt="Full Stack Angular 2"></a></p>
+
+<p>Angular 2 Server Rendering - Angular U, July 2015<br>
+<a href="http://www.youtube.com/watch?v=0wvZ7gakqV4"><img src="http://img.youtube.com/vi/0wvZ7gakqV4/0.jpg" alt="Angular 2 Server Rendering"></a></p>
+
+<h2>
+<a id="prebootjs" class="anchor" href="#prebootjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/angular/preboot">preboot.js</a>
+</h2>
+
+<blockquote>
+<p>Control server-rendered page and transfer state before client-side web app loads to the client-side-app.</p>
+</blockquote>
+
+<h1>
+<a id="whats-in-a-name" class="anchor" href="#whats-in-a-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's in a name?</h1>
+
+<p>We believe that using the word "universal" is correct when referring to a JavaScript Application that runs in more environments than the browser. (inspired by <a href="https://medium.com/@mjackson/universal-javascript-4761051b7ae9">Universal JavaScript</a>)</p>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p><a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/ufo-github">ufo-github</a> can be found on <a href="https://github.com/ufo-github/universal">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
