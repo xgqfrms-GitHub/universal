@@ -27,4 +27,4 @@ https://universal.angular.io/api/universal/index.html#typedoc-main-index
 
 https://universal.angular.io/api/preboot/globals.html
 
-
+![](https://universal.angular.io/api/preboot/assets/images/icons.png)
