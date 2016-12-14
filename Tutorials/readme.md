@@ -1,5 +1,7 @@
 # Angular2 SEO  
 
+> https://github.com/angular/universal
+
 1. Better Perceived Performance 更好的感知性能  
 2. Optimized for Search Engines 针对搜索引擎进行了优化  
 3. Site Preview 网站预览 
@@ -18,5 +20,11 @@ https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.h
 http://googleresearch.blogspot.com/2009/06/speed-matters.html  
 
 
+
+## API docs  
+
+https://universal.angular.io/api/universal/index.html#typedoc-main-index  
+
+https://universal.angular.io/api/preboot/globals.html
 
 
